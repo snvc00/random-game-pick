@@ -9,6 +9,51 @@
             "id": 1,
             "title": "Rocket League",
             "selected": false
+        },
+        {
+            "id": 2,
+            "title": "Call of Duty Modern Warfare",
+            "selected": false
+        },
+        {
+            "id": 3,
+            "title": "League of Legends",
+            "selected": false
+        },
+        {
+            "id": 4,
+            "title": "Minecraft",
+            "selected": false
+        },
+        {
+            "id": 5,
+            "title": "Paladins",
+            "selected": false
+        },
+        {
+            "id": 6,
+            "title": "PAYDAY 2",
+            "selected": false
+        },
+        {
+            "id": 7,
+            "title": "Tom Clancy's Rainbow Six Siege",
+            "selected": false
+        },
+        {
+            "id": 8,
+            "title": "VALORANT",
+            "selected": false
+        },
+        {
+            "id": 9,
+            "title": "Among Us",
+            "selected": false
+        },
+        {
+            "id": 10,
+            "title": "Worms Revolution",
+            "selected": false
         }
     ]
 }

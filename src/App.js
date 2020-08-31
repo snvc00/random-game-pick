@@ -61,11 +61,8 @@ class App extends React.Component {
 
   addNewGame() { 
     if (this.state.currentName !== '') {
-      const last = this.state.games[this.state.games.length - 1];
-      const id = last.id + 1;
-
       const newGame = {
-        id: id,
+        id: this.state.games.length,
         title: this.state.currentName,
         selected: false
       }
