@@ -1,0 +1,7 @@
+.GameCardList {
+    min-width: 300px;
+    border: thin solid #757575;
+    width: 80%;
+    margin: 50px auto;
+    padding: 0;
+}

@@ -1,0 +1,14 @@
+{
+    "games": [
+        {
+            "id": 0,
+            "title": "Fall Guys",
+            "selected": false
+        },
+        {
+            "id": 1,
+            "title": "Rocket League",
+            "selected": false
+        }
+    ]
+}

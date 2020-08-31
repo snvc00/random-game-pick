@@ -1,0 +1,19 @@
+.GameCard {
+    background: #252525;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.GameCard p {
+    color: #eeeeee;
+    margin: 10px 10px;
+    display: flex;
+    border-radius: 0;
+}
