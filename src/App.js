@@ -5,6 +5,7 @@ import AddIcon from '@material-ui/icons/Add';
 import TextField from '@material-ui/core/TextField';
 import GameCardList from './Components/GameCardList';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import withStyles from '@material-ui/styles/withStyles';
 import './App.css';
 import { motion } from "framer-motion"
@@ -35,15 +36,15 @@ const largeButtonStyle = {
   textTransform: 'capitalize', 
   float: 'right', 
   fontFamily: 'Oswald', 
-  color: '#eeeeee'
+  color: '#eeeeee',
+  marginLeft: '10px'
 }
 
 const playButtonStyle = {
   textTransform: 'capitalize', 
   fontFamily: 'Oswald', 
   color: '#eeeeee',
-  width: '100%',
-  fontSize: '4vh'
+  fontSize: '2rem'
 }
 
 class App extends React.Component {
@@ -59,7 +60,7 @@ class App extends React.Component {
     })
   }
 
-  addNewGame() { 
+  addNewGame = () => { 
     if (this.state.currentName !== '') {
       const newGame = {
         id: this.state.games.length,
@@ -86,16 +87,16 @@ class App extends React.Component {
     })
   }
 
-  selectAllGames() {
+  selectAllGames = state => {
     var games = this.state.games;
-    games.forEach(game => { game.selected = true });
+    games.forEach(game => { game.selected = state });
 
     this.setState({
       games: games
     })
   }
 
-  selectRandomGame() {
+  selectRandomGame = () => {
     var selectedGames = [];
 
     this.state.games.forEach(game => {
@@ -104,11 +105,12 @@ class App extends React.Component {
       }
     });
     
-    const i = Math.floor(Math.random() * selectedGames.length);
-    const selection = selectedGames[i] || "Select at least one game";
+    const randomIndex = Math.floor(Math.random() * selectedGames.length);
+    const result = (selectedGames.length > 0 ? 
+          selectedGames[randomIndex].title : 'Select some games buddy');
 
     this.setState ({
-      selection: selection.title
+      selection: result
     });
   }
 
@@ -130,9 +132,18 @@ class App extends React.Component {
             variant="outlined"
             startIcon={ <SelectAllIcon /> }
             style={ largeButtonStyle }
-            onClick={ () => this.selectAllGames() }
+            onClick={ () => this.selectAllGames(true) }
           >
             Select All
+          </Button>
+          <Button
+            color="inherit"
+            variant="outlined"
+            startIcon={ <RemoveCircleOutlineIcon /> }
+            style={ largeButtonStyle }
+            onClick={ () => this.selectAllGames(false) }
+          >
+            Deselect All
           </Button>
         </div>
         <GameCardList 
@@ -156,8 +167,7 @@ class App extends React.Component {
             variant="outlined"
             startIcon={ <AddIcon /> }
             style={ largeButtonStyle }
-            onClick={ () => this.addNewGame() }
-            size="large"
+            onClick={ this.addNewGame }
           >
             Add New Game
           </Button>
@@ -168,7 +178,7 @@ class App extends React.Component {
             variant="outlined"
             startIcon={ <SportsEsportsIcon style={{fontSize: '4vh', marginRight: '20px'}} /> }
             style={ playButtonStyle }
-            onClick={ () => { this.selectRandomGame() } }
+            onClick={ this.selectRandomGame }
           >
             Let's go with ...
           </Button>
