@@ -7,8 +7,8 @@ import GameCardList from './Components/GameCardList';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import withStyles from '@material-ui/styles/withStyles';
-import './App.css';
 import { motion } from "framer-motion"
+import './App.css';
 
 const CustomTextField = withStyles({
   root: {
@@ -34,7 +34,7 @@ const CustomTextField = withStyles({
 
 const largeButtonStyle = {
   textTransform: 'capitalize', 
-  float: 'right', 
+  float: 'right',
   fontFamily: 'Oswald', 
   color: '#eeeeee',
   marginLeft: '10px'
@@ -169,7 +169,7 @@ class App extends React.Component {
             style={ largeButtonStyle }
             onClick={ this.addNewGame }
           >
-            Add New Game
+            New Game
           </Button>
         </div>
         <div className="results">
@@ -181,8 +181,16 @@ class App extends React.Component {
             onClick={ this.selectRandomGame }
           >
             Let's go with ...
-          </Button>
-          <h3 className="selection">{ this.state.selection }</h3>
+          </Button>+
+          <motion.h3 
+            drag="x"
+            dragConstraints={{ left: -10, right: 10 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }} 
+            className="selection"
+          >
+            { this.state.selection }
+          </motion.h3>
         </div>
       </div>
     );
