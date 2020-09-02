@@ -180,7 +180,7 @@ class App extends React.Component {
             style={ playButtonStyle }
             onClick={ this.selectRandomGame }
           >
-            Let's go with ...
+            Let's go with...
           </Button>+
           <motion.h3 
             drag="x"
