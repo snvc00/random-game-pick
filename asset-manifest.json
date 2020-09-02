@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/random-game-pick/static/css/main.1ec90736.chunk.css",
-    "main.js": "/random-game-pick/static/js/main.d84b267f.chunk.js",
-    "main.js.map": "/random-game-pick/static/js/main.d84b267f.chunk.js.map",
+    "main.js": "/random-game-pick/static/js/main.afd3593e.chunk.js",
+    "main.js.map": "/random-game-pick/static/js/main.afd3593e.chunk.js.map",
     "runtime-main.js": "/random-game-pick/static/js/runtime-main.20ac6a84.js",
     "runtime-main.js.map": "/random-game-pick/static/js/runtime-main.20ac6a84.js.map",
     "static/js/2.dde0e649.chunk.js": "/random-game-pick/static/js/2.dde0e649.chunk.js",
     "static/js/2.dde0e649.chunk.js.map": "/random-game-pick/static/js/2.dde0e649.chunk.js.map",
     "index.html": "/random-game-pick/index.html",
-    "precache-manifest.f3fd8d1b31f3b6c1e9468acf46a974e2.js": "/random-game-pick/precache-manifest.f3fd8d1b31f3b6c1e9468acf46a974e2.js",
+    "precache-manifest.6ec84c83f5f5ad63ecb09c2e365fbee3.js": "/random-game-pick/precache-manifest.6ec84c83f5f5ad63ecb09c2e365fbee3.js",
     "service-worker.js": "/random-game-pick/service-worker.js",
     "static/css/main.1ec90736.chunk.css.map": "/random-game-pick/static/css/main.1ec90736.chunk.css.map",
     "static/js/2.dde0e649.chunk.js.LICENSE.txt": "/random-game-pick/static/js/2.dde0e649.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.20ac6a84.js",
     "static/js/2.dde0e649.chunk.js",
     "static/css/main.1ec90736.chunk.css",
-    "static/js/main.d84b267f.chunk.js"
+    "static/js/main.afd3593e.chunk.js"
   ]
 }
