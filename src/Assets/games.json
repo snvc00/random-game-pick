@@ -59,6 +59,11 @@
             "id": 11,
             "title": "Brawlhalla",
             "selected": false
+        },
+        {
+            "id": 12,
+            "title": "APEX",
+            "selected": false
         }
     ]
 }
