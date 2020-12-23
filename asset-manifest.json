@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/random-game-pick/static/css/main.1ec90736.chunk.css",
-    "main.js": "/random-game-pick/static/js/main.29804b99.chunk.js",
-    "main.js.map": "/random-game-pick/static/js/main.29804b99.chunk.js.map",
+    "main.css": "/random-game-pick/static/css/main.5d85a0a8.chunk.css",
+    "main.js": "/random-game-pick/static/js/main.11ea156b.chunk.js",
+    "main.js.map": "/random-game-pick/static/js/main.11ea156b.chunk.js.map",
     "runtime-main.js": "/random-game-pick/static/js/runtime-main.20ac6a84.js",
     "runtime-main.js.map": "/random-game-pick/static/js/runtime-main.20ac6a84.js.map",
     "static/js/2.dde0e649.chunk.js": "/random-game-pick/static/js/2.dde0e649.chunk.js",
     "static/js/2.dde0e649.chunk.js.map": "/random-game-pick/static/js/2.dde0e649.chunk.js.map",
     "index.html": "/random-game-pick/index.html",
-    "precache-manifest.469b73c851b8d33e47cf89374f54a6cc.js": "/random-game-pick/precache-manifest.469b73c851b8d33e47cf89374f54a6cc.js",
+    "precache-manifest.034c3bb80a7e8f5e7ba1fa7a2a47e0f5.js": "/random-game-pick/precache-manifest.034c3bb80a7e8f5e7ba1fa7a2a47e0f5.js",
     "service-worker.js": "/random-game-pick/service-worker.js",
-    "static/css/main.1ec90736.chunk.css.map": "/random-game-pick/static/css/main.1ec90736.chunk.css.map",
+    "static/css/main.5d85a0a8.chunk.css.map": "/random-game-pick/static/css/main.5d85a0a8.chunk.css.map",
     "static/js/2.dde0e649.chunk.js.LICENSE.txt": "/random-game-pick/static/js/2.dde0e649.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.20ac6a84.js",
     "static/js/2.dde0e649.chunk.js",
-    "static/css/main.1ec90736.chunk.css",
-    "static/js/main.29804b99.chunk.js"
+    "static/css/main.5d85a0a8.chunk.css",
+    "static/js/main.11ea156b.chunk.js"
   ]
 }
